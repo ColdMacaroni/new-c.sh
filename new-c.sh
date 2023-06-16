@@ -70,7 +70,7 @@ ${BINDIR}:
 
 # Compile the files, no linking.
 ${OBJDIR}/%.o: ${SRCDIR}/%.c ${OBJDIR}
-	${CC} ${CCFLAGS} ${OBJDIR} -c -o $@ $< -I${INCLUDEDIR}
+	${CC} ${CCFLAGS} -c -o $@ $< -I${INCLUDEDIR}
 
 ${OBJDIR}:
 	mkdir -p ${OBJDIR}
